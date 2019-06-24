@@ -2,7 +2,8 @@ clear all
 clc
 close all
 
-[last_filename path] = uigetfile('/Users/kyle/Downloads/*.csv')
+sleep_rename
+[last_filename path] = uigetfile('/Users/kylemathewson/Downloads/*.csv')
 totalfiles = str2double(last_filename(end-7:end-5)); %actually one more with no suffix ()
 
  %% loop through and grab cals
